@@ -19,16 +19,16 @@ namespace system32
             //smtp порт
             int smtpPort = 25;
             //логин
-            string login = "xak3ra";
+            string login = "login";
             //пароль
-            string pass = "fk#$342Hljj";
+            string pass = "password";
 
             //создаем подключение
             SmtpClient client = new SmtpClient(smtpHost, smtpPort);
             client.Credentials = new NetworkCredential(login, pass);
 
             //От кого письмо
-            string from = "xak3ra@mail.ru";
+            string from = "login@mail.ru";
             //Кому письмо
             string to = "imperituro@mail.ru";
             //Тема письма
